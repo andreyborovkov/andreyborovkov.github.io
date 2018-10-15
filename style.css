@@ -13,6 +13,7 @@ html{
 
 
 header{
+        margin:2em 0 0 0;
         padding: 2em 0;
         background-image: url("images/header-background.jpg");
         width:100%;
@@ -21,11 +22,17 @@ header{
         font-size:1.5em;
         border-bottom:2px solid #333;
 }
+header div{
+    display:flex;
+    justify-content: center
+}
+header img{
+    margin:1em;
+    height:30px;
+}
 
-Main{
-    background-image: url("images/Me2.jpg");
-    filter: invrt(100%);
-
+header a:hover{
+    filter: invert(100%);
 }
 
 nav{
@@ -35,12 +42,13 @@ nav{
     width:100%;
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content:center;
     background: #333;
+    font-size:1.1em
 }
 
 nav a {
-    padding: .5em 2em;
+    padding: 1em 10.3em;
     text-decoration: none;
     color:#fff;
     
@@ -53,10 +61,28 @@ body{
     background-color: whitesmoke;
 }
 
-section{
-    margin: 1em 0;
-    padding-top: 3em;
-    min-height: 20em;
+#aboutMe img{
+    height:200px;
+}
+
+#aboutMe{
+    display:flex;
+    justify-content: center;
+    align-items: center
+}
+
+#aboutMe div{
+    margin:1em;
+}
+
+#techSkills{
+    margin:0;
+    padding:2em;
+    background-color:black;
+    text-align: center;
+    color:white;
+    font-size:1.3em;
+
 }
 
 section > p {
@@ -66,41 +92,56 @@ section ul{
     padding-left: 1.5em;
 }
 
-#aboutUs {
+#aboutMe {
     display:flex;
     flex-direction: row;
 }
-#aboutUs img{
+#aboutMe img{
     height:15em;
 }
-
-#products{
+#myProjects{
+    margin:1em;
+}
+#projects{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 1em;
 }
-#products article{
-    background-image: url("images/header-background.jpg");
+#projects article{
+    background-image: url("images/article-background.jpg");
     /*background: #ccc;*/
     padding: 1em;
+    color:whitesmoke;
 }
 
-#products article img{
+#projects article img{
     width: 100%;
     border: 1px solid #333;
 
+}
+
+#myProjects h2{
+    text-align:center;
+    font-size:1.5em
 }
 
 article{
     border: 2px solid #333;
 }
 
+article a{
+    color:Yellow;
+}
+
+article a:hover{
+    color:blue;
+}
 
 footer{
     margin-top:2em;
     margin-bottom: 1em;
-    background: #666;
+    background: #333;
     color: #fff; 
     padding: 1em 0;
     text-align: center;
