@@ -11,6 +11,10 @@ html{
         margin-top: 0em;
 }
 
+body.modal-open {
+    /* hide scrolling when modal open */
+    overflow: hidden;
+  }
 
 header{
         margin:2em 0 0 0;
@@ -44,17 +48,19 @@ nav{
     flex-flow: row;
     justify-content:center;
     background: #333;
-    font-size:1.1em
+    font-size:1.1em;
 }
 
 nav a {
-    padding: 1em 10.3em;
+    display:flex;
+    align-content: space-around;
+    padding: 1em 4em;
     text-decoration: none;
     color:#fff;
     
 }
 nav a:hover{
-    background: #666;
+     color: yellow;
 }
 
 body{
@@ -68,7 +74,8 @@ body{
 #aboutMe{
     display:flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    flex-direction: row;
 }
 
 #aboutMe div{
@@ -92,13 +99,7 @@ section ul{
     padding-left: 1.5em;
 }
 
-#aboutMe {
-    display:flex;
-    flex-direction: row;
-}
-#aboutMe img{
-    height:15em;
-}
+
 #myProjects{
     margin:1em;
 }
@@ -137,6 +138,9 @@ article a{
 article a:hover{
     color:blue;
 }
+#projects button {
+    display: none;
+  }
 
 footer{
     margin-top:2em;
@@ -148,3 +152,194 @@ footer{
 }
 
 
+@media screen and (max-width: 750px) {
+
+    nav {
+      display: flex;
+      flex-flow: column;
+    }
+    nav a {
+      display: none;
+    }
+    nav::before {
+      content: 'SHOW MENU';
+      color: #fff;
+      background: #000;
+      font-weight: bold;
+      padding: 1em 2em;
+      cursor: pointer;
+    }
+    nav.open::before {
+      content: 'HIDE MENU';
+    }
+    nav.open a {
+      display: block;
+    }
+  
+    nav ::selection {
+      color: inherit;
+      background: transparent;
+    }
+  }
+
+
+
+  @media screen and (max-width: 40em) {
+  #projects {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    width: 60vw;
+    min-width: 22em;
+    margin: 1em auto;
+  }
+
+  #projects button {
+    display: inline-block;
+  }  
+  
+  #projects article p {
+    display: none;
+  }
+
+  #projects article.expanded p {
+    display: block;
+  }
+}
+  
+
+span.live {
+    cursor: pointer;
+    color:white;
+    text-shadow: 2px 2px black;
+    border-bottom: 2px groove white;
+  }
+  span.live:hover {
+    color: yellow;
+  }
+
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+  
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-open #backdrop {
+    display: flex;
+  }
+  
+  #modal {
+    width: 80vw;
+    height: 80vh;
+    background: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px #333;
+    overflow-y: auto
+  }
+  
+  #modal h4 {
+    float: left;
+  }
+  
+  #modal button {
+    float: right;
+  
+    background: #eee;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 3px;
+  
+    cursor: pointer;
+  }
+  
+  #modal button:hover {
+    color: #fff;
+    background: #999;
+  }
+  
+  #modal #modal-content {
+    display:flex;
+    clear: both;
+    padding-top: 1em;
+  }
+  
+
+  #slider ::selection {
+    color: inherit;
+    background: transparent;
+  }
+  
+  #slider-frame {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #333;
+    position: relative;
+    
+  }
+  
+  #slider-prev,
+  #slider-next {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    padding: 1em;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 2px #000;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  #slider-prev:hover,
+  #slider-next:hover {
+    color: yellow;
+  }
+  
+  #slider-prev {
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #slider-next {
+    right: 0;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  #slider-frame {
+    background-color:white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    height: 10em;
+
+  }
+  
+  #slider-frame [data-src] {
+    display: none;
+  }
+  
+  #slider-caption {
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  #slider-caption.flash {
+    transition: 0s;
+    background: #ccc;
+  }

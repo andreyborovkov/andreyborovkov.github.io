@@ -5,8 +5,8 @@
         <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-    <header>
-    <h1>Andrey Borovkov</h1>
+    <header id="header">
+    <h1><span id="modal-trigger" class="live">Andrey Borovkov</span></h1>
     <span>Junior Software Developer</span>
     <div>
         <a href="https://github.com/andreyborovkov"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github"></a>
@@ -20,24 +20,35 @@
                 Restful APIs  •  Responsive Design / Mobile  •  Structured Query Language (SQL)  •  Transactional Databases / MS SQL  • 
                 MySQL  •  Android  •  Source Control / GitHub</p>
         </section>     
-        <section id="aboutMe">
-            <div>
-                <img src="images/Me.png" alt="Andrey Borovkov">
-            </div>
-            <div >
-                <h2>Who am I?</h2>
-                <p>Bilingual (English and Russian) software developer apprentice with proven history of working across
-                   cultures, strong ability to multitask, and a passion for growing technical abilities to benefit
-                   fast-paced organization.</p>
-            </div>
-            <div>
-                <h2>Experience</h2>
-                <p>Engaged in a full-time, 5-star-rated coding boot camp, learning agile full-stack software development 
-                    from expert instructors and intensive hands-on projects. Planned, designed, and developed professionally 
-                    programmed applications in collaborative team-based and independent settings, demonstrating the proficiency 
-                    to earn Software Development Certificate.</p>
-            </div>
-        </section>
+        
+        <section id="specialEvents">
+            
+                <div id="slider">
+                  <div id="slider-frame">
+                    
+                    <div id="slider-prev">PREV</div>
+                    <div id="slider-next">NEXT</div>
+        
+                    <div id="slider-images">
+                      <div data-src="./images/slider1.png">
+                        Let's boot up your new project.
+                      </div>
+                      <div data-src="./images/slider2.png">
+                        You'll want to double-click this one.
+                      </div>
+                      <div data-src="./images/slider3.png">
+                        Our cookies are super.
+                      </div>
+                      <div data-src="./images/slider4.png">
+                        Our cookies are super.
+                      </div>
+                    </div>
+        
+                  </div>
+
+                </div>
+        
+              </section>
 
         <section id="myProjects">
            <h2>Projects</h2>
@@ -45,12 +56,14 @@
                     <article>
                         <h3>Project 1</h3>
                         <image src="./images/mysqlproject.jpg">
+                            <button>Show Details</button>
                         <p>Created a 14-table database for a bakery shop following project requirements. 
                             Created views, triggers, and procedures. (MySQL)</p>
                     </article>
                     <article>
                         <h3>Project 2</h3>
                         <image src="./images/aspnetproject.png">
+                            <button>Show Details</button>
                         <p>Created a website that has a master page with navigation bar, allows user to register 
                             and update his/her password after logging in, and displays a list of majors in a dropdown
                             list and a list of classes depending on the major picked. (ASP.NET, HTML5, CSS3, SQL)</p>
@@ -58,6 +71,7 @@
                     <article>
                         <h3>Project 3</h3>
                         <image src="./images/csproject.jpg">
+                            <button>Show Details</button>
                         <p>Created a console application for an interactive, game-like virtual pet program allowing
                             the user to select different tasks and activities from the menu that update stats of the pet.(C#)<br>
                             <a href="https://github.com/andreyborovkov/VirtualPet">Go to project</a></p>
@@ -68,26 +82,41 @@
     </Main>    
     
     <nav>
-          <a href="#techSkills">Technical Skills</a> 
-          <a href="#aboutMe">About Me</a> 
+          <a href="#header">About Me</a> 
+          <a href="#techSkills">Technical Skills</a>  
           <a href="#myProjects">Projects</a>
-    </naV>
+    </nav>
     
+    <div id="backdrop">
+        <div id="modal">
+          <button class="text-button">Close</button>
+    
+          <div id="modal-content">
+                <div>
+                        <img src="images/Me.png" alt="Andrey Borovkov">
+                    </div>
+                    <div >
+                        <h2>Who am I?</h2>
+                        <p>Bilingual (English and Russian) software developer apprentice with proven history of working across
+                           cultures, strong ability to multitask, and a passion for growing technical abilities to benefit
+                           fast-paced organization.</p>
+                    
+                        <h2>Experience</h2>
+                        <p>Engaged in a full-time, 5-star-rated coding boot camp, learning agile full-stack software development 
+                            from expert instructors and intensive hands-on projects. Planned, designed, and developed professionally 
+                            programmed applications in collaborative team-based and independent settings, demonstrating the proficiency 
+                            to earn Software Development Certificate.</p>
+                    </div>
+          </div>
+        </div>
+      </div>
+
     
     <footer>
         &copy; 2018
     </footer>
     
-    
-    
-    
-    
-    
-    
-    
-    
-
-
+    <script src="./script.js"></script>
 </body>
 
 </html>
