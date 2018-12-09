@@ -236,7 +236,7 @@ span.live {
   
   #modal {
     width: 80vw;
-    height: 80vh;
+    height: 70vh;
     background: #fff;
     padding: 1em;
     border-radius: 5px;
@@ -268,6 +268,14 @@ span.live {
     display:flex;
     clear: both;
     padding-top: 1em;
+  }
+
+  #modal #picture{
+    padding-left:1em;
+  }
+  #bio{
+    padding-left:3em;
+    width:55%
   }
   
 

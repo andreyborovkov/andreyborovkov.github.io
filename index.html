@@ -6,7 +6,7 @@
 </head>
 <body>
     <header id="header">
-    <h1><span id="modal-trigger" class="live">Andrey Borovkov</span></h1>
+    <h1>Andrey Borovkov</h1>
     <span>Junior Software Developer</span>
     <div>
         <a href="https://github.com/andreyborovkov"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github"></a>
@@ -21,8 +21,7 @@
                 MySQL  •  Android  •  Source Control / GitHub</p>
         </section>     
         
-        <section id="specialEvents">
-            
+        <section id="carousel">         
                 <div id="slider">
                   <div id="slider-frame">
                     
@@ -31,24 +30,17 @@
         
                     <div id="slider-images">
                       <div data-src="./images/slider1.png">
-                        Let's boot up your new project.
                       </div>
                       <div data-src="./images/slider2.png">
-                        You'll want to double-click this one.
                       </div>
                       <div data-src="./images/slider3.png">
-                        Our cookies are super.
                       </div>
                       <div data-src="./images/slider4.png">
-                        Our cookies are super.
                       </div>
-                    </div>
-        
+                    </div>     
                   </div>
-
                 </div>
-        
-              </section>
+        </section>
 
         <section id="myProjects">
            <h2>Projects</h2>
@@ -62,19 +54,18 @@
                     </article>
                     <article>
                         <h3>Project 2</h3>
-                        <image src="./images/aspnetproject.png">
+                        <image src="" alt="project picture">
                             <button>Show Details</button>
-                        <p>Created a website that has a master page with navigation bar, allows user to register 
-                            and update his/her password after logging in, and displays a list of majors in a dropdown
-                            list and a list of classes depending on the major picked. (ASP.NET, HTML5, CSS3, SQL)</p>
+                        <p>Developed an ASP.NET MVC app that allows user to see details for different reviews depending on the picked
+                            category and add comments. Used Entity Framework to store data. (HTML5, CSS3, JavaScript, C#)</p>
                     </article>
                     <article>
                         <h3>Project 3</h3>
-                        <image src="./images/csproject.jpg">
+                        <image src="" alt="project picture">
                             <button>Show Details</button>
-                        <p>Created a console application for an interactive, game-like virtual pet program allowing
-                            the user to select different tasks and activities from the menu that update stats of the pet.(C#)<br>
-                            <a href="https://github.com/andreyborovkov/VirtualPet">Go to project</a></p>
+                        <p>Worked in a team to develop an ASP.NET MVC application that allows a registered user to manage and create
+                            his or her home improvement projects. Followed TDD technique and used Entity Framework to store data. (C#,
+                            JavaScript, HTML5, CSS3)</p>
                     </article>
                 </div>
         </section>
@@ -82,9 +73,9 @@
     </Main>    
     
     <nav>
-          <a href="#header">About Me</a> 
           <a href="#techSkills">Technical Skills</a>  
           <a href="#myProjects">Projects</a>
+          <a><span id="modal-trigger" class="live">About Me</span> </a>
     </nav>
     
     <div id="backdrop">
@@ -92,10 +83,10 @@
           <button class="text-button">Close</button>
     
           <div id="modal-content">
-                <div>
+                    <div id=picture>
                         <img src="images/Me.png" alt="Andrey Borovkov">
                     </div>
-                    <div >
+                    <div id=bio>
                         <h2>Who am I?</h2>
                         <p>Bilingual (English and Russian) software developer apprentice with proven history of working across
                            cultures, strong ability to multitask, and a passion for growing technical abilities to benefit
@@ -110,7 +101,6 @@
           </div>
         </div>
       </div>
-
     
     <footer>
         &copy; 2018

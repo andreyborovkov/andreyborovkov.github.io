@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding:0
+}
+
+  
+  body {
+    background-image: url(https://www.aim.org/wp-content/uploads/2018/04/Chalbi_Desert_Panorama.jpg);
+    color: #555;
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.1em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  img {
+    margin: 20px auto;
+    display: block;
+    height: 50%;
+    -webkit-mask-image: url(images/mask2.png);
+    mask-image: url(images/mask2.png);
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-repeat: no-repeat;
+    position: fixed;
+    top: 500px;
+  }
