@@ -100,32 +100,6 @@ section ul{
 }
 
 
-#myProjects{
-    margin:1em;
-}
-#projects{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 1em;
-}
-#projects article{
-    background-image: url("images/article-background.jpg");
-    /*background: #ccc;*/
-    padding: 1em;
-    color:whitesmoke;
-}
-
-#projects article img{
-    width: 100%;
-    border: 1px solid #333;
-
-}
-
-#myProjects h2{
-    text-align:center;
-    font-size:1.5em
-}
 
 article{
     border: 2px solid #333;
