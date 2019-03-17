@@ -3,16 +3,7 @@
     font-family: arial;
   }
   
-  body {
-    background: #eaeaea;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1, h2, h3, p {
-    margin-top: 0;
-  }
+
   
   .content {
     margin: auto;
@@ -42,9 +33,6 @@
     font-size: 1.3em;
   }
   
-  .main-content {
-    padding-left: 320px;
-  }
   
   .footer-base {
     background: #dadada;
