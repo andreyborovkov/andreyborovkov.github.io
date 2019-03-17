@@ -17,9 +17,10 @@ body.modal-open {
   }
 
 header{
-        margin:2em 0 0 0;
+        margin: 65px 0 0 0;
         padding: 2em 0;
         background-image: url("images/header-background.jpg");
+        background-attachment: fixed;
         width:100%;
         color:whitesmoke;
         text-align:center;
@@ -37,6 +38,10 @@ header img{
 
 header a:hover{
     filter: invert(100%);
+}
+
+header h1, header h4{
+  text-shadow: 2px 2px 4px #000000;
 }
 
 nav{

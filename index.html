@@ -8,8 +8,8 @@
 </head>
 <body>
     <header id="header">
-    <h1>Andrey Borovkov</h1>
-    <span>Junior Software Developer</span>
+    <h1 class="title">Andrey Borovkov</h1>
+    <h4>Junior Software Developer</h4>
     <div>
         <a href="https://github.com/andreyborovkov"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github"></a>
         <a href="https://www.linkedin.com/in/andrey-borovkov-282025153/"><img src="https://image.flaticon.com/icons/svg/69/69406.svg" alt="linkedin"></a>
@@ -23,7 +23,7 @@
                 MySQL  •  Android  •  Source Control / GitHub</p>
         </section>     
         
-        <section>
+        <section id="projects">
           <h1 class="header__title">Project Library</h1>
       
           <label class="input-label" for="choose">
@@ -38,6 +38,7 @@
               <option value="opt3">Reviews App</option>
             </select>
           </div>
+
           <section class="jqueryOptions opt1">
             <div class="content">
               <h1>Home Improvement Tracker</h1>
@@ -63,8 +64,6 @@
                   An ASP.NET MVC application that allows user to see details for different reviews depending on the picked category and add comments using AJAX. Used TDD to ensure the code quality, Entity Framework to store data, and lazy loading to display related data from different models in a single view.  (C#, JavaScript, HTML5, CSS3)
               </p>
           </section>
-
-
         </section>
 
         
@@ -73,7 +72,7 @@
     
     <nav>
           <a href="#techSkills">Technical Skills</a>  
-          <a href="projects.html">Projects</a>
+          <a href="#projects">Projects</a>
           <a><span id="modal-trigger" class="live">About Me</span> </a>
     </nav>
     
@@ -102,7 +101,7 @@
       </div>
     
     <footer>
-        &copy; 2018
+        &copy; 2018<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>
     </footer>
     
     <script src="./script.js"></script>
