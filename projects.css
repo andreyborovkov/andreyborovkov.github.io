@@ -5,7 +5,7 @@
     margin: auto;
     max-width: 80%;
     padding: 20px;
-    max-height: 500px;
+
   }
   
   .content :last-child {
@@ -154,6 +154,8 @@
       max-width: 100%;
     }
   }
+
+
 
 
 

@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
+
 
 body {
   color: #444;
@@ -16,7 +14,7 @@ body {
 }
 
 .slider {
-  height: 400px;
+  height: 700px;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
